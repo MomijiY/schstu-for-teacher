@@ -15,6 +15,7 @@
 		798F063922758A410048E727 /* schstu_for_teacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F063822758A410048E727 /* schstu_for_teacherTests.swift */; };
 		798F064422758A420048E727 /* schstu_for_teacherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F064322758A420048E727 /* schstu_for_teacherUITests.swift */; };
 		79A717792276B15F00560C20 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A717782276B15F00560C20 /* AddViewController.swift */; };
+		79FF496722A7B9BC00C897C9 /* seeMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF496622A7B9BC00C897C9 /* seeMemoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		798F064322758A420048E727 /* schstu_for_teacherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schstu_for_teacherUITests.swift; sourceTree = "<group>"; };
 		798F064522758A420048E727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A717782276B15F00560C20 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		79FF496622A7B9BC00C897C9 /* seeMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seeMemoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				798F062322758A400048E727 /* AppDelegate.swift */,
 				798F062522758A400048E727 /* ViewController.swift */,
 				79A717782276B15F00560C20 /* AddViewController.swift */,
+				79FF496622A7B9BC00C897C9 /* seeMemoryViewController.swift */,
 				798F062722758A400048E727 /* Main.storyboard */,
 				798F062A22758A410048E727 /* Assets.xcassets */,
 				798F062C22758A410048E727 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A717792276B15F00560C20 /* AddViewController.swift in Sources */,
+				79FF496722A7B9BC00C897C9 /* seeMemoryViewController.swift in Sources */,
 				798F062622758A400048E727 /* ViewController.swift in Sources */,
 				798F062422758A400048E727 /* AppDelegate.swift in Sources */,
 			);
