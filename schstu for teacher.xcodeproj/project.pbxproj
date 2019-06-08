@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793F82CE22ABDC41004BA37E /* NewInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F82CD22ABDC41004BA37E /* NewInfoViewController.swift */; };
 		798F062422758A400048E727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F062322758A400048E727 /* AppDelegate.swift */; };
 		798F062622758A400048E727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F062522758A400048E727 /* ViewController.swift */; };
 		798F062922758A400048E727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798F062722758A400048E727 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793F82CD22ABDC41004BA37E /* NewInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInfoViewController.swift; sourceTree = "<group>"; };
 		798F062022758A400048E727 /* schstu for teacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "schstu for teacher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		798F062322758A400048E727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		798F062522758A400048E727 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				798F062522758A400048E727 /* ViewController.swift */,
 				79A717782276B15F00560C20 /* AddViewController.swift */,
 				79FF496622A7B9BC00C897C9 /* seeMemoryViewController.swift */,
+				793F82CD22ABDC41004BA37E /* NewInfoViewController.swift */,
 				798F062722758A400048E727 /* Main.storyboard */,
 				798F062A22758A410048E727 /* Assets.xcassets */,
 				798F062C22758A410048E727 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				79FF496722A7B9BC00C897C9 /* seeMemoryViewController.swift in Sources */,
 				798F062622758A400048E727 /* ViewController.swift in Sources */,
 				798F062422758A400048E727 /* AppDelegate.swift in Sources */,
+				793F82CE22ABDC41004BA37E /* NewInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

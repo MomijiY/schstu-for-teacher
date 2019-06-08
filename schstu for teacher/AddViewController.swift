@@ -11,36 +11,39 @@ import UIKit
 //変数の設置
 var TodoKobetsunonakami = [String]()
 
-class AddViewController: ViewController {
+class AddViewController: ViewController, UITextFieldDelegate{
     
-        //テキストフィールドの設定
-        @IBOutlet weak var TodoTextView: UITextView!
-        
-        //追加ボタンの設定
-        @IBAction func TodoAddButten(_ sender: Any) {
-            //変数に入力内容を入れる
-            TodoKobetsunonakami.append(TodoTextView.text!)
-            //追加ボタンを押したらフィールドを空にする
-            TodoTextView.text = ""
-            //変数の中身をUDに追加
-            UserDefaults.standard.set( TodoKobetsunonakami, forKey: "TodoList" )
-        }
-
+    
+    @IBOutlet weak var contentTextView: UITextView!
+    
+    var saveData: UserDefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        contentTextView.text = saveData.object(forKey: "content") as? String
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func saveMemo() {
+        
+        saveData.set(contentTextView.text, forKey: "content")
+        
+        let alert: UIAlertController = UIAlertController(title: "OK", message: "メモの保存が完了しました", preferredStyle: .alert)
+        
+        alert.addAction(
+            UIAlertAction(title: "OK", style: .default, handler: { action in
+                
+                self.navigationController?.popViewController(animated: true)
+            }
+            )
+        )
+        present(alert, animated: true, completion: nil)
     }
-    */
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return  true
+    }
 }
