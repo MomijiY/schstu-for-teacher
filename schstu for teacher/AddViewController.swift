@@ -24,6 +24,23 @@ class AddViewController: ViewController, UITextFieldDelegate{
         
         contentTextView.text = saveData.object(forKey: "content") as? String
         
+        let toolBar =  UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        
+        toolBar.barStyle = UIBarStyle.default
+        
+        toolBar.sizeToFit()
+        
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+        
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(seeMemoryViewController.commitButtonTapped))
+        
+        toolBar.items = [spacer, commitButton]
+        
+        contentTextView.inputAccessoryView = toolBar
+    }
+    
+    @objc func commitButtonTapped() {
+        self.view.endEditing(true)
     }
     
     @IBAction func saveMemo() {
