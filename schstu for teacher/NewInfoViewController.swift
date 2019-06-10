@@ -19,7 +19,7 @@ class NewInfoViewController: UIViewController, UITableViewDataSource, UITableVie
         
         table.dataSource = self
         table.delegate = self
-        oshiraseNameArray = ["今までのお知らせ"]
+        oshiraseNameArray = ["お知らせ１", "お知らせ2", "お知らせ3", "お知らせ4",  "お知らせ5", "お知らせ6", "お知らせ7"]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

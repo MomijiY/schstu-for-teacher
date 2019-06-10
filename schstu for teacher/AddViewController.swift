@@ -14,7 +14,7 @@ var TodoKobetsunonakami = [String]()
 class AddViewController: ViewController, UITextFieldDelegate{
     
     
-    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var TextView: UITextView!
     
     var saveData: UserDefaults = UserDefaults.standard
     
@@ -22,7 +22,7 @@ class AddViewController: ViewController, UITextFieldDelegate{
         super.viewDidLoad()
         
         
-        contentTextView.text = saveData.object(forKey: "content") as? String
+        TextView.text = saveData.object(forKey: "Text") as? String
         
         let toolBar =  UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
         
@@ -36,7 +36,7 @@ class AddViewController: ViewController, UITextFieldDelegate{
         
         toolBar.items = [spacer, commitButton]
         
-        contentTextView.inputAccessoryView = toolBar
+        TextView.inputAccessoryView = toolBar
     }
     
     @objc func commitButtonTapped() {
@@ -45,7 +45,7 @@ class AddViewController: ViewController, UITextFieldDelegate{
     
     @IBAction func saveMemo() {
         
-        saveData.set(contentTextView.text, forKey: "content")
+        saveData.set(TextView.text, forKey: "Text")
         
         let alert: UIAlertController = UIAlertController(title: "OK", message: "メモの保存が完了しました", preferredStyle: .alert)
         
